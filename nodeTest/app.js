@@ -1,17 +1,8 @@
 import chalk from 'chalk';
+const chalk = require('chalk');
 
-// Funksjon for å endre fargen på tekst
-function endreFarge() {
-    const tekstElement = document.getElementById('colorText');
+const kjuttaVits = `${chalk.red('Fortelle')} ${chalk.yellow('en')} ${chalk.green('vits ?')} 
+                ${chalk.cyan('Kjutta')}? ${chalk.blue('med')} ${chalk.magenta('slips')}`;
 
-    // Bruk av chalk for å fargelegge tekst i konsollen
-    console.log(chalk.blue('Dette er blå tekst'));
-    console.log(chalk.red('Dette er rød tekst'));
-    console.log(chalk.bold.green('Dette er fet grønn tekst'));
+console.log(kjuttaVits);
 
-    // Endre fargen på HTML-elementet
-    tekstElement.style.color = 'green';
-}
-
-// Kall funksjonen når siden lastes
-window.onload = endreFarge;
